@@ -1,8 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from "next/font/local";
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const brownRegular = localFont({
+  src: "./fonts/Brown-Regular.woff2",
+  variable: "--font-brown-regular",
+  weight: "400",
+});
+const brownBold = localFont({
+  src: "./fonts/Brown-Bold.woff2",
+  variable: "--font-brown-bold",
+  weight: "700",
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <body className={`${brownRegular.variable} ${brownBold.variable}`}>
+      {children}
+    </body>
     </html>
   )
 }
