@@ -8,6 +8,7 @@ import { version as chatSdkVersion } from "@microsoft/omnichannel-chat-sdk/packa
 import { version as chatWidgetVersion } from "@microsoft/omnichannel-chat-widget/package.json";
 import { version as chatComponentVersion } from "@microsoft/omnichannel-chat-components/package.json";
 
+// THIS IS DUMMY CONFIG - REPLACE VALUES BELOW WITH ONES USED BY YOUR ORGANISATION
 const omnichannelConfig = {
   orgUrl: "https://www.org-url.com", // dummy config
   orgId: "00000000-0000-0000-0000-000000000000", // dummy config
